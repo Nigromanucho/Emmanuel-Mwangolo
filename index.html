@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Mwangolo - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Black background for professional look */
+            color: #f1f1f1; /* Light gray text color */
+        }
+
+        .header {
+            background-color: #1e8f39; /* Green header for a vibrant touch */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .navbar {
+            background-color: #1b1b1b; /* Dark gray navbar */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #ffffff; /* White text for links */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: #1e8f39; /* Green hover effect */
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1f1f1f; /* Darker gray for content area */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            color: #1e8f39; /* Green headings */
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            background-color: #1e8f39; /* Green footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .follow-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #444; /* Dark button background */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .follow-button:hover {
+            background-color: white;
+            color: #444;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Emmanuel Mwangolo</h1>
+        <p>EMMANUEL MWANGOLO PORTFOLIO</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#" onclick="showTab('home')">Home</a>
+        <a href="#" onclick="showTab('about')">About</a>
+        <a href="#" onclick="showTab('contact')">Contact</a>
+    </div>
+
+    <div id="home" class="container tab-content active">
+        <h2>Welcome to My Portfolio</h2>
+        <p>As a Computer Science student with a strong foundation in
+           programming, algorithms and data structures, I thrive in team
+           collaboration where we share common interests in solving computer-related
+           problems. </p>
+        <p>Gaining additional skills through an attachment or
+           internship would significantly contribute to achieving my ambition of
+           becoming a professional Software Engineer.</p>
+    </div>
+
+    <div id="about" class="container tab-content">
+        <h2>About Me</h2>
+        <h3>Skills</h3>
+        <ul>
+            <li><strong>Data Packages:</strong> Word, Excel, Access, PPT, Publisher, MySQL</li>
+            <li><strong>Programming:</strong> C, C++, Python, Java, HTML, CSS, JavaScript</li>
+            <li><strong>Problem Solving:</strong> Critical thinking, Creativity, Research skills, Teamwork</li>
+            <li><strong>Communication:</strong> Team collaboration, Active listening, Presentation</li>
+            <li><strong>Management:</strong> Time management, Project management, Leadership</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <p><strong>Hatua Network Organization</strong> - Contributed to grassroots peace initiatives, promoting community awareness on peace and unity (June 2022 - August 2022)</p>
+        <p><strong>Telkom Kenya</strong> - Registered SIM cards, resolved connectivity issues, and renewed SIM cards (September 2023 - May 2024)</p>
+
+        <h3>Education</h3>
+        <p><strong>Machakos University</strong> - Bachelor of Science (Computer Science), Ongoing</p>
+    </div>
+
+    <div id="contact" class="container tab-content">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> <a href="mailto:emmanuelmwangolo18@gmail.com">emmanuelmwangolo18@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+254715946470">+254715946470</a></p>
+        <p>Follow me on social media for updates:</p>
+        <a href="https://www.facebook.com/profile.php?id=100080786560214" class="follow-button">Facebook</a>
+        <a href="https://www.instagram.com/nigromanucho/" class="follow-button">Instagram</a>
+        <a href="https://www.linkedin.com/in/emmanuel-mwangolo-06262428b" class="follow-button">LinkedIn</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Emmanuel Mwangolo. All rights reserved.</p>
+    </div>
+</body>
+</html>
